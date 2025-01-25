@@ -43,3 +43,27 @@ while not at_goal():
 
 #se puede usar en negativo hasta que no llegue al goal seguir jumping
 
+#Ejemplo usar el while not con if/else
+
+while not at_goal():
+    if wall_in_front():
+        jump()   
+    else:
+        move() 
+
+def turn_right():
+    turn_left()
+    turn_left()
+    turn_left()
+
+def jump():
+    turn_left()
+            
+while not at_goal():
+    if right_is_clear():
+        turn_right()
+        move()
+    elif wall_in_front():
+        jump()        
+    else:
+        move()
