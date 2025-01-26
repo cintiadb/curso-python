@@ -1,0 +1,39 @@
+#Step 1 
+import random
+word_list = ["aardvark", "baboon", "camel"]
+chosen_word = random.choice (word_list)
+print(chosen_word)
+
+letter1 = input("What letter do you think is in the word?\n")
+lower_letter1 = letter1.lower()
+
+#otra opcion era guess = input ("Guess a letter:").lower()
+
+cantidad_letras = len(chosen_word)
+chosen_word_list = list(chosen_word)
+
+#otra opcion para hacer el ejercicio pero mucho mas complicado
+"""print(chosen_word_list)
+for letter in range(0,cantidad_letras):
+    print(letter)
+    print(chosen_word_list[letter])
+    if letter1 == chosen_word_list[letter]:
+        print("Right")
+    else:
+        print("wrong")"""
+
+for letter in chosen_word:
+    if letter == letter1:
+        print("Right")
+    else:
+        print("Wrong")
+
+
+
+
+
+#TODO-1 - Randomly choose a word from the word_list and assign it to a variable called chosen_word.
+
+#TODO-2 - Ask the user to guess a letter and assign their answer to a variable called guess. Make guess lowercase.
+
+#TODO-3 - Check if the letter the user guessed (guess) is one of the letters in the chosen_word.
