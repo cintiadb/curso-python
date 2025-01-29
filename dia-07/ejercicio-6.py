@@ -33,7 +33,7 @@ while not end_of_game:
         print(f"The letter {guess} is not in the word. You lose a life")
         if lives == 0:
             end_of_game = True
-            print("You lose.")
+            print(f"You lose. The word was {chosen_word}")
 
     print(f"{' '.join(display)}")
 
