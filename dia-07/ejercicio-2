@@ -1,0 +1,26 @@
+import random
+word_list = ["aardvark", "baboon", "camel"]
+chosen_word = random.choice (word_list)
+print(f"PSST, the result is {chosen_word}")
+
+display = []
+for _ in chosen_word:
+    display += "_"
+print(display)
+
+letter1 = input("Guess a letter\n")
+lower_letter1 = letter1.lower()
+
+#otra opcion 
+"""display = []
+for _ in range(len(chosen_word)):
+    display += "_"
+print(display)"""
+
+for position in range(len(chosen_word)):
+    letter = chosen_word[position]
+    if letter1 == letter:
+        display [position] = letter1
+        print(display)
+
+
