@@ -1,0 +1,18 @@
+n = int(input("Check this number: "))
+
+def primer_checker(number):
+    prime_number = True 
+    for i in range(2,number):
+        if number % i == 0:
+            prime_number = False
+    if prime_number == True:
+        print(f"{n}is a prime number")
+    else:
+        print(f"{n} is not a prime number")
+
+primer_checker(number=n)
+
+
+
+
+
