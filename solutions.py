@@ -4,7 +4,6 @@ with open("solution.csv", "r", encoding="utf-8") as my_file:
 
         name_of_student = parts[0]
         problem = parts[1]
-        parts[1] =parts[1(0)]
         expected_result = parts[2]
 
         if str(eval(problem)) == expected_result:
