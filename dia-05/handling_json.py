@@ -1,7 +1,7 @@
 import json
 
 def print_persons(filename: str):
-    with open("person.json") as my_file:
+    with open("person.json","r") as my_file:
         data = my_file.read()
 
         for person in data:
